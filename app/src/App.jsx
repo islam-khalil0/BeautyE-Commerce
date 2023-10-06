@@ -1,10 +1,12 @@
 import "./App.css";
 import Routers from "./Routers/Routers";
+import Checkbox1 from "./components/ProductCard/Checkbox1";
 
 function App() {
   return (
     <div>
-      <Routers />
+      {/* <Routers /> */}
+      <Checkbox1/> 
     </div>
   );
 }
