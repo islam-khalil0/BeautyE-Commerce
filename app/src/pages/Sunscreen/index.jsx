@@ -1,11 +1,14 @@
-import React from 'react'
-import Styles from "./sunscreen.module.css"
-
+import React from "react";
+import Styles from "./sunscreen.module.css";
+import Checkbox1 from "../../components/CheckBoxOne/Checkbox1";
 
 const index = () => {
   return (
-    <div>sunscreen page</div>
-  )
-}
+    <div>
+      sunscreen page
+      <Checkbox1 />
+    </div>
+  );
+};
 
-export default index
+export default index;

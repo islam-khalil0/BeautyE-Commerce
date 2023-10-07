@@ -1,0 +1,27 @@
+.colors {
+    display : flex;
+    gap:10px;
+    margin-top: 10px;
+    font-size: 20px;
+
+    
+}
+
+.red {
+    color : red ;
+}
+
+.black {
+    color : black;
+}
+
+.yellow {
+    color :yellow;
+}
+.green {
+    color :rgb(35, 172, 35);
+}
+
+.blueviolet{
+    color :blueviolet
+}
