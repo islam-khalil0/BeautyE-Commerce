@@ -90,7 +90,7 @@ const index = () => {
                 />
               </Col>
               <Col md={6} className="d-flex align-items-center">
-                <div className="p-3">
+                <div className="p-3" style={{ margin: "0 0 50px 20px" }}>
                   <h2>
                     New from Eminence <br className="d-none d-md-block" />{" "}
                     Organic Skin Care
@@ -113,7 +113,7 @@ const index = () => {
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination]}
-          className=""
+          style={{padding:'3rem 0'}}
           spaceBetween={40}
           slidesPerView={2}
           breakpoints={{
