@@ -1,0 +1,85 @@
+.container {
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.offers_section .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.offers_section .image img {
+  width: 35rem;
+}
+
+.offers_section .swiper_div {
+  width: 100%;
+  position: relative;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.offers_section .swiper_div .effect {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 100%;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  opacity: 0.9;
+}
+
+.offers_section .swiper_div .swiper {
+  width: 55rem;
+  padding: 1rem;
+}
+
+.offers_section .swiper_div .swiper .swiper_slide {
+  width: max-content;
+}
+
+@media screen and (max-width: 1498px) {
+  .offers_section {
+    grid-template-columns: 1fr;
+  }
+
+  .offers_section .image {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .offers_section .swiper_div {
+    display: none;
+  }
+
+  .offers_section .image {
+    align-items: start;
+  }
+
+  .offers_section .image img {
+    width: 90%;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  padding: 3rem 2rem;
+}
+
+.brands {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .7rem;
+  justify-content: center;
+  padding: 1rem 0;
+}

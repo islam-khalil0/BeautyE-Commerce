@@ -1,9 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../../layouts/checkbox1.css";
-import { Checkbox2 } from "../CheckBoxTwo/Checkbox2";
-import { Productrating } from "../Rating/Productrating";
-import { Size } from "../Size/Size";
-import { Colors } from "../Colors/Colors";
+
 export default function Checkbox1() {
   let [isOpen, setIsOpen] = useState(true);
   let divref = useRef(null);
@@ -116,10 +113,10 @@ export default function Checkbox1() {
           )}
         </div>
 
-        <Checkbox2 />
+        {/* <Checkbox2 />
         <Productrating />
         <Size />
-        <Colors />
+        <Colors /> */}
       </div>
     </div>
   );

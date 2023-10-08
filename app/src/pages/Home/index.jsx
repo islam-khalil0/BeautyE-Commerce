@@ -4,6 +4,7 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Navigation, Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import OffersSection from "../../components/OffersSection/index";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,7 +14,10 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import { MdAddShoppingCart } from "react-icons/md";
 
+import BrandCard from "../../components/BrandCard/index";
+
 const sliderHome = [1, 2, 3, 4, 5, 6];
+const brandProductsArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const data = [
   {
@@ -62,7 +66,7 @@ const data = [
 
 const index = () => {
   return (
-    <>
+    <div>
       <Swiper
         // install Swiper modules
 
@@ -163,7 +167,20 @@ const index = () => {
           ))}
         </Swiper>
       </Container>
-    </>
+
+      <OffersSection />
+
+      <div className={Styles.container}>
+        <h3>Brands</h3>
+        <div className={Styles.brands}>
+          {brandProductsArray.map((item) => {
+            return <BrandCard key={item} {...item} />;
+          })}
+        </div>
+      </div>
+
+      <OffersSection />
+    </div>
   );
 };
 
