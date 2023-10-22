@@ -113,7 +113,7 @@ const index = () => {
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination]}
-          style={{padding:'3rem 0'}}
+          style={{ padding: "3rem 0" }}
           spaceBetween={40}
           slidesPerView={2}
           breakpoints={{
