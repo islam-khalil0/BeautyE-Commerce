@@ -67,46 +67,47 @@ const data = [
 const index = () => {
   return (
     <div>
-      <Swiper
-        // install Swiper modules
+        <div className={`position-relative my-4 ${Styles.home}`}>
+          <Swiper
+            // install Swiper modules
 
-        modules={[Navigation, Pagination]}
-        className="my-5"
-        spaceBetween={40}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        {sliderHome.map((_item) => (
-          <SwiperSlide>
-            <Row className={Styles.home}>
-              <Col md={6} className={Styles.img_content}>
-                <img
-                  className="d-block w-100"
-                  src="https://cdn.logojoy.com/wp-content/uploads/20191023114758/AdobeStock_224061283-min.jpeg"
-                  alt=""
-                />
-              </Col>
-              <Col md={6} className="d-flex align-items-center">
-                <div className="p-3" style={{ margin: "0 0 50px 20px" }}>
-                  <h2>
-                    New from Eminence <br className="d-none d-md-block" />{" "}
-                    Organic Skin Care
-                  </h2>
-                  <p className="py-2">
-                    Mineral protection that guards against sun{" "}
-                    <br className="d-none d-md-block" /> damage & leaves skin
-                    looking radiant.
-                  </p>
-                  <Button className="px-4">Shop now</Button>
-                </div>
-              </Col>
-            </Row>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            modules={[Navigation, Pagination]}
+            spaceBetween={40}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            {data.map((_item) => (
+              <SwiperSlide>
+                <Row className={Styles.home}>
+                  <Col md={6} className={Styles.img_content}>
+                    <img
+                      className="d-block w-100"
+                      src="https://cdn.logojoy.com/wp-content/uploads/20191023114758/AdobeStock_224061283-min.jpeg"
+                      alt=""
+                    />
+                  </Col>
+                  <Col md={6} className="d-flex align-items-center">
+                    <div className="p-3">
+                      <h2>
+                        New from Eminence <br className="d-none d-md-block" />{" "}
+                        Organic Skin Care
+                      </h2>
+                      <p className="py-2">
+                        Mineral protection that guards against sun{" "}
+                        <br className="d-none d-md-block" /> damage & leaves
+                        skin looking radiant.
+                      </p>
+                      <Button className="px-4">Shop now</Button>
+                    </div>
+                  </Col>
+                </Row>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
 
       {/* brands card */}
       <Container className="my-4">
